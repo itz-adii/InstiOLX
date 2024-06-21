@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InstiOLX Sell</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header id="nav">
+      <div class="logo">
+        <span>InstiOLX</span>
+        <p>Your one-stop solution for buying and selling used items.</p>
+      </div>
+    </header>
+
+    <main>
+      <div class="menu">
+        <div class="basic-info-outer">
+          <h2 class="main-headings">
+            <i class="fa-solid fa-box-open"></i>Basic Information
+          </h2>
+
+          <div class="myClass">
+            <div class="sub-1">
+              <h4 class="headings">Title:</h4>
+              <p class="para">
+                Give a brief and descriptive title of the product.
+              </p>
+              <input type="text" required />
+            </div>
+
+            <div class="sub-2">
+              <h4 class="headings">Category:</h4>
+              <p class="para">
+                Select the category under which the product falls.
+              </p>
+              <select required>
+                <option value="">Select Category</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Furniture">Furniture</option>
+                <option value="Vehicles">Vehicles</option>
+              </select>
+            </div>
+
+            <div class="sub-3">
+              <h4 class="headings">Description:</h4>
+              <p class="para">Provide a detailed description of the product.</p>
+              <textarea required></textarea>
+            </div>
+
+            <div class="sub-4">
+              <h4 class="headings">Price:</h4>
+              <p class="para">Enter the selling price of the product.</p>
+              <input type="text" required />
+            </div>
+
+            <div class="sub-5">
+              <h4 class="headings">Condition:</h4>
+              <p class="para">Select the condition of the product.</p>
+              <select required>
+                <option value="">Select Condition</option>
+                <option value="New">New</option>
+                <option value="Like New">Like New</option>
+                <option value="Good">Good</option>
+                <option value="Fair">Fair</option>
+                <option value="Poor">Poor</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="seller-info-outer">
+          <h2 class="main-headings">
+            <i class="fa-regular fa-user"></i>Seller Information
+          </h2>
+
+          <div class="myClass">
+            <div class="sub-6">
+              <h4 class="headings">Seller Name:</h4>
+              <p class="para">Full name of the seller.</p>
+              <input type="text" required />
+            </div>
+
+            <div class="sub-7">
+              <h4 class="headings">Contact Information:</h4>
+              <p class="para">Phone number of the seller.</p>
+              <input type="text" required />
+            </div>
+
+            <div class="sub-8">
+              <h4 class="headings">Location:</h4>
+              <p class="para">The location where the product is available.</p>
+              <input type="text" required />
+            </div>
+          </div>
+        </div>
+
+        <div class="product-specs-outer">
+          <h2 class="main-headings">
+            <i class="fa-solid fa-timeline" style="font-size: 30px"></i>Product
+            Specifications
+          </h2>
+
+          <div class="myClass">
+            <div class="sub-9">
+              <h4 class="headings">Brand:</h4>
+              <p class="para">
+                Enter the brand or manufacturer of the product.
+              </p>
+              <input type="text" required />
+            </div>
+
+            <div class="sub-10">
+              <h4 class="headings">Model:</h4>
+              <p class="para">Enter the specific model of the product.</p>
+              <input type="text" required />
+            </div>
+          </div>
+        </div>
+
+        <div class="media-outer">
+          <h2 class="main-headings">
+            <i class="fa-regular fa-image"></i>Media
+          </h2>
+
+          <div class="myClass">
+            <div class="sub-11">
+              <h4 class="headings">Photos:</h4>
+              <p class="para" style="padding-bottom: 10px">
+                Upload high-quality images of the product from different angles.
+              </p>
+              <label class="lbl" for="image-up">Choose Image</label>
+              <input
+                type="file"
+                id="image-up"
+                accept="image/*"
+                multiple
+                required
+              />
+              <span class="file-name">No file chosen</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="additional-details-outer">
+          <h2 class="main-headings">
+            <i class="fa-solid fa-plus"></i>Additional Details
+          </h2>
+          <div class="myClass">
+            <div class="sub-12">
+              <h4 class="headings">Accessories Included:</h4>
+              <p class="para">
+                Provide details about any accessories or additional items
+                included with the product (if applicable).
+              </p>
+              <input type="text" />
+            </div>
+          </div>
+        </div>
+
+        <div class="shipping-info-outer">
+          <h2 class="main-headings">
+            <i class="fa-solid fa-truck"></i>Shipping and Delivery
+          </h2>
+          <div class="myClass">
+            <div class="sub-13">
+              <h4 class="headings">Shipping Options:</h4>
+              <p class="para">
+                Specify the available shipping methods and costs (if
+                applicable).
+              </p>
+              <textarea></textarea>
+            </div>
+
+            <div class="sub-14">
+              <h4 class="headings">Pickup Options:</h4>
+              <p class="para">
+                Indicate if the product is available for local pickup.
+              </p>
+              <input type="checkbox" />
+            </div>
+          </div>
+        </div>
+
+        <div class="payments-outer">
+          <h2 class="main-headings">
+            <i class="fa-solid fa-money-bill"></i>Payment
+          </h2>
+          <div class="myClass">
+            <div class="sub-15">
+              <h4 class="headings">Payment Methods Accepted:</h4>
+              <p class="para">
+                List the types of payment the seller accepts (e.g., cash, bank
+                transfer, online payment systems).
+              </p>
+              <input type="text" required />
+            </div>
+          </div>
+        </div>
+        <button type="submit">Submit</button>
+      </div>
+    </main>
+
+    <footer>
+      <div class="content">
+        <div class="sections">
+          <h3 class="sections">Quick Links</h3>
+          <ul class="sections">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="sections">
+          <h3 class="sections">Contact Us</h3>
+          <p>Email: support@instiolx.com</p>
+          <p>Phone: +123-456-7890</p>
+        </div>
+        <div class="sections">
+          <h3 class="sections">Follow us</h3>
+          <div class="social-icons sections">
+            <a href="#"> <i class="fa-brands fa-facebook"></i> </a>
+            <a href="#"> <i class="fa-brands fa-instagram"></i> </a>
+            <a href="#"> <i class="fa-brands fa-x-twitter"></i> </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <h5 class="sections">Website by Aditya</h5>
+        <p>&copy; 2024 InstiOLX. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
