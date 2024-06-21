@@ -3,7 +3,7 @@ let myClassElements = document.querySelectorAll(".myClass");
 myClassElements.forEach((element) => {
   element.addEventListener("click", (event) => {
     event.stopPropagation();
-    element.style.borderLeft = "4px solid #f1786b";
+    element.style.borderLeft = "4.5px solid #f1786b";
   });
 });
 
